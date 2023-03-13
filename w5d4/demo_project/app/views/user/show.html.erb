@@ -1,0 +1,25 @@
+<%# This folder must be in the main views. The file is the name of the route that we want to show. %>
+
+<%# displays the user information of the page %>
+
+<h1> User show page</h1>
+
+<%# This is going to the _user file. It keeps our code dry %>
+
+
+<%# <%= render  "name of partial without underscore", variable_name: variable passed in under the variable name %>
+
+<%= render 'user', user: @user %>
+
+
+
+
+
+
+
+
+<ul>
+    <li>username: <%= @user.username %> </li>
+    <li>email: <%= @user.email %></li>
+    <li>age: <%= @user.age  %></li>
+</ul>

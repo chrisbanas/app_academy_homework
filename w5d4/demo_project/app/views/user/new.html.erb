@@ -1,0 +1,17 @@
+<h1>Create a user!</h1>
+
+<%# This is using the rails routes on line 4 %>
+<form action="<%= users_url %>" method='POST'>
+<%# The path is the action and the method is the verb %>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="user[username]" value="<%= @user.username %>">
+    <br>  <%#line break               must be a key val pair %>
+    <%# Other way to write %>
+        <label>
+            <input type="text">
+        </label>
+    <br>
+
+    <input type="submit" value="Create User">
+</form>

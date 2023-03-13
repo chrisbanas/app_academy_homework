@@ -1,0 +1,7 @@
+
+
+<form action="<%= user_url %>" method='POST'>
+<%# The path is the action and the method is the verb, we cannot use PATCH here so we have to write a hidden input type %>
+
+<%# below is how we implement patch in a form. We overwrite the method POST with PATCH %>
+<input type="hidden" name="_method" value="PATCH">
